@@ -27,9 +27,7 @@
 
         <br /> <br />
         
-        Loan Start Date: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        
-        <br /><br />
+       
 
         <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
         &nbsp
