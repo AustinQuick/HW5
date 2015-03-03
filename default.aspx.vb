@@ -70,8 +70,6 @@ Partial Class _Default
             principal = monthlyPayment - interestPaid
             nBalance = loanAmount - principal
             loanAmount = nBalance
-            newLoan = totalLoan - monthlyPayment
-            totalLoan = newLoan
             currentDate = currentDate.AddMonths(1)
 
 
@@ -81,7 +79,7 @@ Partial Class _Default
             tRow("Payment Date") = String.Format("{0:d}", currentDate)
             tRow("Principal Paid") = String.Format("{0:C}", principal) ' String.Format("{0:C},principal) formats the variable "prinicpal" as currency (C).
             tRow("Interest Paid") = String.Format("{0:C}", interestPaid)
-            tRow("New Balance") = String.Format("{0:C}", newLoan)
+            tRow("New Balance") = String.Format("{0:C}", nBalance)
             loanAmortTbl.Rows.Add(tRow)
 
             'Loops to next counterStart (Continues loop until counterStart requirements are met (loanTerm)).
