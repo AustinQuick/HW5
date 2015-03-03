@@ -1,0 +1,52 @@
+body {background-color:#BC1339;}
+
+.emessage {
+	color:yellow;
+}
+
+.bold {font-weight:bold; 
+	font-size:28pxpx;
+	color:yellow}
+
+/*Formatting the gridview
+.cssgridview {
+		width:auto; 
+		margin;5px 0 10px 0;
+		border: solid 1px #525252;
+		border-collapse:collapse;
+		text-align:center;
+		font-family: "Times New Roman";
+		color: black;
+		}
+		
+.cssgridview td {
+		padding:12pxpx;
+		border:solid 1px #c1c1c1;
+		color:#383838;
+	}
+
+.cssgridview th {
+		padding:12px;
+		color:#fff;
+		background:black;
+		border-left:solid 1px gray;
+		font-size:0.9em;
+}
+
+.cssgridview .alt {background-color:#fff;}
+
+.button {
+		border-radius: 5px;
+		background-color: #888888;
+		border-color:black;
+}
+
+.appborder {
+		border: 3px solid black;
+		border-radius: 5px;
+		background: #00FF7F;
+		padding: 12px;
+		width: 500px;
+		height:auto;
+		margin:0 auto;
+		}
