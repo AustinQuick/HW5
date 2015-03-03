@@ -47,7 +47,7 @@ Partial Class _Default
         monthlyPayment = loanAmount * interestRate / (1 - Math.Pow((1 + interestRate), (-loanTerm)))
 
         'Displaying the monthly payment in the textbox and converts the variable to currency.
-        lblMonthlyPmt.Text = FormatCurrency(monthlyPayment
+        lblMonthlyPmt.Text = FormatCurrency(monthlyPayment)
 
 
         'Adds items to list box, formats them for currency and adds pad spacing for each item.
@@ -78,7 +78,7 @@ Partial Class _Default
             'Writes the data to a new row in the gridview.
             tRow = loanAmortTbl.NewRow()
             tRow("Payment Number") = String.Format(counterStart)
-            tRow("Payment Date") = String.Format(currentDate)
+            tRow("Payment Date") = String.Format("{0:d}", currentDate)
             tRow("Principal Paid") = String.Format("{0:C}", principal) ' String.Format("{0:C},principal) formats the variable "prinicpal" as currency (C).
             tRow("Interest Paid") = String.Format("{0:C}", interestPaid)
             tRow("New Balance") = String.Format("{0:C}", newLoan)
